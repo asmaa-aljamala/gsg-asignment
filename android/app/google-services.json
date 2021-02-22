@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "14787187995",
+    "project_id": "gsg-fire",
+    "storage_bucket": "gsg-fire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14787187995:android:4904626141e1ce6f01afbe",
+        "android_client_info": {
+          "package_name": "com.example.page1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14787187995-kllafvdgjb8csgr1s5m6jt301bnjk5b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdf7B-IuL9w89FNYCkSibkJ2f0dWUX6_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14787187995-kllafvdgjb8csgr1s5m6jt301bnjk5b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

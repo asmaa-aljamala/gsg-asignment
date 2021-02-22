@@ -1,6 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:page1/backend/server.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -18,10 +17,11 @@ class Home extends StatelessWidget {
           size: 30.0,
         ),
         actions: [
-          Icon(
-            Icons.arrow_forward,
-            color: Colors.black,
-          ),
+          IconButton(
+              icon: Icon(Icons.logout),
+              onPressed: () {
+                signOut();
+              })
         ],
       ),
       body: SingleChildScrollView(
@@ -33,10 +33,11 @@ class Home extends StatelessWidget {
                 height: 200,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assest/image/img4.jpg'),
-                      fit: BoxFit.cover,
-                      colorFilter: ColorFilter.mode(
-                          Colors.black.withOpacity(0.5), BlendMode.darken)),
+                    image: AssetImage('assest/image/img4.jpg'),
+                    fit: BoxFit.cover,
+                    colorFilter: ColorFilter.mode(
+                        Colors.black.withOpacity(0.5), BlendMode.darken),
+                  ),
                 ),
               ),
               SizedBox(
@@ -187,7 +188,9 @@ class Home extends StatelessWidget {
                               '50',
                               style: TextStyle(fontSize: 15),
                             ),
-                            SizedBox(width: 40,),
+                            SizedBox(
+                              width: 40,
+                            ),
                             Text(
                               'المقبلات ',
                               style: TextStyle(fontSize: 18),
@@ -215,14 +218,16 @@ class Home extends StatelessWidget {
                                     BlendMode.darken)),
                           ),
                         ),
-                       Row(
+                        Row(
                           // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text(
                               '50',
                               style: TextStyle(fontSize: 15),
                             ),
-                            SizedBox(width: 40,),
+                            SizedBox(
+                              width: 40,
+                            ),
                             Text(
                               'المقبلات ',
                               style: TextStyle(fontSize: 18),
